@@ -3,6 +3,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route('/home')
+def home():
+    return render_template("homepage.html")
+
 @app.route('/navbar')
 def navbar():
     return render_template("base.html")
