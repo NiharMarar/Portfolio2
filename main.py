@@ -1,5 +1,5 @@
 #imports
-from flask import Flask, render_template
+from flask import Flask, redirect, url_for , render_template
 
 app = Flask(__name__)
 
@@ -18,3 +18,6 @@ def HelloSeries():
 @app.route('/Flask-Series')
 def FlaskSeries():
     return render_template("FlaskSeries.html")
+
+if __name__ == "__main__":
+    app.run(debug=True,port='8080')
