@@ -1,8 +1,62 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello-Series Project</title>
+    <style>
+        .button {
+            background-color: #3CB371;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            display: block;
+
+           }
+
+        .button1 {
+            background-color: #C5533B;
+            color: #FFFFFF;
+            border: 2px solid #C0C0C0;
+            position:relative;
+            top:453px;
+        }
+        .button2 {
+            background-color: #C5533B;
+            color: #FFFFFF;
+            border: 2px solid #C0C0C0;
+            position:relative;
+            top:391px;
+            right:-170px;
+        }
+
+        .button3 {
+            background-color: #C5533B;
+            color: #FFFFFF;
+            border: 2px solid #C0C0C0;
+            position:relative;
+            top:328px;
+            right:170px;
+        }
+
+        h {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+{% extends "base.html" %}
 {% block helloseries %}
-<center><h1 class="homepage-text">Hello Series</h1></center>
-<center><a href="#" class="custom-button">Link Button</a>
-    <a href="#" class="custom-button">Link Button</a>
-    <a href="#" class="custom-button">Link Button</a>
+<center><h1>Hello-Series Project</h1></center>
+<center><button onclick="location.href='https://docs.google.com/document/d/1OnqZgwSPUVqhQjRoXzFK5pAXBNTmBkxvg4pzIl3ZNvg/edit?usp=sharing'" class="button button1">Project Scope</button>
+    <button onclick="location.href='https://padlet.com/jmortensen7/csp2021'" class="button button2">References</button>
+    <button onclick="location.href='https://repl.it/@1846292/CipherCrypto?from=notifications#README.md'" class="button button3">Repl.it</button>
 </center>
 {% endblock %}
+</body>
+</html>

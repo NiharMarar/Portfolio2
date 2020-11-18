@@ -20,23 +20,43 @@
            }
 
         .button1 {
-            background-color: #00FA9A;
-            color: #FFC145;
-            border: 2px solid #FFFFFF;
+            background-color: #C5533B;
+            color: #FFFFFF;
+            border: 2px solid #C0C0C0;
+            position:relative;
+            top:453px;
+        }
+        .button2 {
+            background-color: #C5533B;
+            color: #FFFFFF;
+            border: 2px solid #C0C0C0;
+            position:relative;
+            top:391px;
+            right:-170px;
+        }
+
+        .button3 {
+            background-color: #C5533B;
+            color: #FFFFFF;
+            border: 2px solid #C0C0C0;
+            position:relative;
+            top:328px;
+            right:170px;
+        }
+
+        h {
+            color: black;
         }
     </style>
 </head>
 <body>
 {% extends "base.html" %}
-{% block content %}
-
-    <center><h1 style="position:relative; top:450px; font-size:50px; color:#FFC145" >Flask</h1></center>
-    <p><center><button class="button button1" href="https://github.com/NiharMarar/CypherCyrptoWebProject2"  style="position:relative; top:460px;" >Github</button></center>
-        <center><button class="button button1" href="https://docs.google.com/document/d/1OnqZgwSPUVqhQjRoXzFK5pAXBNTmBkxvg4pzIl3ZNvg/edit?usp=sharing" style="position:relative; top:393px; right:-180px;">Project Scope</button></center>
-        <center><button class="button button1" href="https://padlet.com/jmortensen7/csp2021"  style="position:relative; top:324px; right:170px;">Resources</button></center></p>
-
-
+{% block helloseries %}
+<center><h1>Flask-Series Project</h1></center>
+<center><button onclick="location.href='https://docs.google.com/document/d/1vdb35cwYtZLmaKNI8jL_dlSvZALS6_WQbzcvhOj0Osg/edit?usp=sharing'" class="button button1">Project Scope</button>
+    <button onclick="location.href='https://padlet.com/jmortensen7/csp2021'" class="button button2">References</button>
+    <button onclick="location.href='https://github.com/NiharMarar/CypherCyrptoWebProject2'" class="button button3">Github</button>
+</center>
 {% endblock %}
-
 </body>
 </html>
