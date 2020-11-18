@@ -5,8 +5,8 @@
     <title>Hello-Series Project</title>
     <style>
         .button {
-            background-color: mediumseagreen;
-            border: 1px solid white;
+            background-color: #3CB371;
+            border: none;
             color: white;
             padding: 15px 32px;
             text-align: center;
@@ -16,18 +16,22 @@
             margin: 4px 2px;
             cursor: pointer;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+
            }
+
+        .button1 {
+            background-color: #00FA9A;
+            color: #FFC145;
+            border: 2px solid #FFFFFF;
+        }
     </style>
 </head>
 <body>
-<div>
-    <b><center><h1 style="position:relative; top:450px; font-size:50px; color:#FFC145" >Hello Series</h1></center>
-        <center><a href="https://repl.it/@1846292/CipherCrypto?from=notifications#README.md" class="button" style="position:relative; top:460px;" >Repl Code</a></center>
-        <center><a href="https://docs.google.com/document/d/1OnqZgwSPUVqhQjRoXzFK5pAXBNTmBkxvg4pzIl3ZNvg/edit?usp=sharing" class="button" style="position:relative; top:393px; right:-180px;" >Project Scope</a></center>
-        <center><a href="https://padlet.com/jmortensen7/csp2021" class="button" style="position:relative; top:324px; right:170px;" >Resources</a></center>
-        </b>
-</div>
+{% extends "base.html" %}
+{% block content %}
+
+
+
+{% endblock %}
 </body>
 </html>
