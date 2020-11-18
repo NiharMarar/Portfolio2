@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello-Series Project</title>
-    <style>
-        .button {
-            background-color: #3CB371;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            display: block;
-
-           }
-
-        .button1 {
-            background-color: #00FA9A;
-            color: #FFC145;
-            border: 2px solid #FFFFFF;
-        }
-    </style>
-</head>
-<body>
-{% extends "base.html" %}
-{% block content %}
-
-
-
+{% extends 'base.html' %}
+{% block helloseries %}
+<center><h1 class="homepage-text">Hello Series</h1></center>
+<center><a href="#" class="custom-button">Link Button</a>
+    <a href="#" class="custom-button">Link Button</a>
+    <a href="#" class="custom-button">Link Button</a>
+</center>
 {% endblock %}
-</body>
-</html>
